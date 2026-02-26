@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-# ==========================================
+
 # Dibujar grafo con camino y explorados
-# ==========================================
+
 def draw_graph(graph, path=None, explored=None):
 
     G = nx.Graph()
@@ -75,6 +75,7 @@ def draw_matrix_with_path(matrix, path=None, explored=None):
 
     plt.figure(figsize=(6, 6))
 
+     # Mapa de colores personalizado para los 6 valores posibles (0 a 5)
     cmap = plt.cm.colors.ListedColormap([
         "white",    # 0 espacio
         "black",    # 1 pared
